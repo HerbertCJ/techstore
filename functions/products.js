@@ -19,13 +19,10 @@ exports.handler = async (event, context, cb) => {
             return { id, featured, name, price, colors, company, description, category, shipping, image: url }
 
         })
-
-        console.log('######');
-        console.log(reponse)
-        console.log('######');
+       
         return {
             statusCode: 200,
-            body: 'products route',
+            body: JSON.stringify(products)
         };
     } catch (error) {
         console.log(error);
