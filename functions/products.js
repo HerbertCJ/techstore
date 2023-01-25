@@ -14,12 +14,13 @@ exports.handler = async (event, context, cb) => {
         const products = reponse.records.map((product) => {
             const { id, fields } = product
             const { name, featured, price, colors, company, description, category, shipping, images } = fields
-            const { url } = images[0]            
+            const { url } = images[0]
+
             return { id, featured, name, price, colors, company, description, category, shipping, image: url }
 
         })
        
-        return {            
+        return {
             statusCode: 200,
             body: JSON.stringify(products)
         };
