@@ -6,8 +6,8 @@ const Services = () => {
   return <Wrapper>
     <div className="section-center">
       <article className="header">
-        <h3>custom furniture <br />
-        built only for you
+        <h3>the best technology<br />
+        you will find here
         </h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In facilis exercitationem vel sunt recusandae tenetur, possimus officiis autem placeat harum.</p>
       </article>
